@@ -1,0 +1,16 @@
+BRASILSONG AI — PACOTE DE ATUALIZAÇÃO INICIAL
+
+Conteúdo:
+- studio.html: primeira versão do BrasilSong Studio para abrir no navegador.
+- CORRECAO-RENDER.txt: correção necessária para o erro do Express 5 no Render.
+
+IMPORTANTE
+Este pacote ainda não está publicado no GitHub nem aplicado ao site do Render.
+O studio.html é uma versão inicial separada: nesta versão você precisa selecionar os arquivos de instrumental e voz-guia manualmente. A voz-guia serve apenas para referência durante a gravação e não entra na mixagem final. A gravação/exportação desta versão é experimental e gera arquivo WebM; não oferece ainda exportação profissional WAV/MP3 nem masterização profissional.
+
+PRÓXIMO PASSO NO GITHUB
+1. Abra o repositório Brasilsong/BrasilSongAI.
+2. Use Add file > Upload files.
+3. Envie studio.html e faça Commit changes.
+4. Para que a página principal passe a abrir o estúdio, ainda será necessário integrar um link/rota na interface existente.
+5. Corrija também o erro de rota do servidor conforme CORRECAO-RENDER.txt.

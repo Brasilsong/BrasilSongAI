@@ -1,0 +1,12 @@
+CORREÇÃO DO ERRO DO EXPRESS 5
+
+No arquivo server.js do repositório, procure a linha final parecida com:
+
+app.get('*', (req, res, next) => { if (req.path.startsWith('/api/')) return next(); res.sendFile(path.join(__dirname, 'index.html')); });
+
+Substitua por:
+
+app.get('/{*splat}', (req, res, next) => { if (req.path.startsWith('/api/')) return next(); res.sendFile(path.join(__dirname, 'index.html')); });
+
+Salve com Commit changes e aguarde o Render fazer novo deploy.
+Depois teste o endereço do seu site acrescentando /api/health. A resposta esperada é um JSON com "ok": true.
